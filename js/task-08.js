@@ -12,11 +12,11 @@ function onSubmitButton(event) {
     newUser.email = email;
     newUser.password = password;
     console.log(newUser);
+    form.reset();
   } else {
     alert("Ви ще не заповнили всі поля!");
   };
 
-  form.reset();
 };
 
 // const formData = new FormData(event.currentTarget);

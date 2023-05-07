@@ -12,8 +12,9 @@ const destroyBtn = document.querySelector('button[data-destroy]');
 
 createBtn.addEventListener('click', onCreateBtn);
 function onCreateBtn (event) {
+  mainBox.innerHTML = "";
   const blocks = ctrPad.firstElementChild.value;
-  alert(`Увага! Кількість блоків що створюється: ${blocks}`);
+  console.log(`Увага! Кількість створених блоків: ${blocks}`);
   console.log(blocks);
   const packOfBlocks = [];
 
@@ -37,5 +38,5 @@ destroyBtn.addEventListener('click', onDestroyBtn);
 
 function onDestroyBtn (event) {
   mainBox.innerHTML = "";
-  alert("Всі блоки буде знищено!!");
+  console.log("Всі блоки знищено!!");
 }

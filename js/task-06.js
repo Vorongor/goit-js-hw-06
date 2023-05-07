@@ -11,11 +11,12 @@ console.log(inputSelector.dataset.length);
 
 inputSelector.addEventListener('blur', (event) => {
     if (inputSelector.value.length >= inputSelector.dataset.length) {
+        inputSelector.classList.remove('invalid');
         inputSelector.classList.add('valid');
-        console.log(inputSelector.value.length);
         
     } else {
+        inputSelector.classList.remove('valid');
         inputSelector.classList.add('invalid');
-        console.log(inputSelector.value.length);
+        
     };
 });

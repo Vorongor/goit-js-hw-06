@@ -12,7 +12,6 @@ colorBtn.addEventListener('click', onColorBtn);
 
 function onColorBtn (event) {
   let currentColor = getRandomHexColor();
-  console.log (currentColor);
-  colorValue.textContent = `${currentColor}`;
-  body.style.backgroundColor = `${currentColor}`;
+  colorValue.textContent = currentColor;
+  body.style.backgroundColor = currentColor;
 }
