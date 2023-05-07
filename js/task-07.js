@@ -3,6 +3,9 @@ const textEl = document.querySelector('#text');
 
 console.dir(controlerEl);
 
-controlerEl.addEventListener('input', (event) => {
-    textEl.style.fontSize = controlerEl.valueAsNumber;
-})
+controlerEl.addEventListener('input',onInputChange);
+
+function onInputChange (event) {
+    console.log(event.currentTarget.value);
+    textEl.style.fontSize = `${event.currentTarget.value}px`;
+}
